@@ -1,0 +1,42 @@
+<%@page import="java.sql.*"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>join</title>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="check.js"></script>
+</head>
+<body>
+	<jsp:include page="header.jsp"></jsp:include>
+	
+	<section>
+		<h2><b>홈쇼핑 회원 등록</b></h2><br>
+		
+		<form name="frm">
+			<table border="1">
+				<tr>
+					<td>회원번호(자동발생)</td>
+					<td><input type="text" name="custno"></td>
+				</tr>
+				<tr>
+					<td>회원성명</td>
+					<td><input type="text" name="custname"></td>
+				</tr>
+				<tr>
+					<td>회원전화</td>
+					<td><input type="text" name="phone"></td>
+				</tr>
+				<tr>
+					<td>회원주소</td>
+					<td><input type="text" name="address"></td>
+				</tr>
+			</table>
+		
+		</form> 
+	</section>
+	<jsp:include page="footer.jsp"></jsp:include> 
+</body>
+</html>
